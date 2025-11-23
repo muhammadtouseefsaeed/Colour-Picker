@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Color Picker — Touseef Malik</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="avatar">
+        <img src="https://i.postimg.cc/Kzrm2mJy/558094692-787841107555093-6027457938418604754-n.jpg" alt="Touseef Malik">
+      </div>
+      <div>
+        <h1>Touseef Malik — Color Picker</h1>
+        <div class="by">Created by Touseef Malik</div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="panel">
+        <div class="preview">
+          <div class="color-box" id="colorBox"></div>
+          <div class="values">
+            <div class="value" id="hexVal">#00aaff</div>
+            <div class="value" id="rgbVal">rgb(0,170,255)</div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <input type="color" id="colorInput" value="#00aaff">
+          <input type="text" id="hexInput" value="#00aaff">
+          <button id="copyBtn">Copy HEX</button>
+          <button id="saveBtn">Save</button>
+        </div>
+
+        <div class="image-upload">
+          <label for="imageInput">Upload Image:</label>
+          <input type="file" id="imageInput" accept="image/*">
+          <canvas id="canvas" style="display:none;"></canvas>
+          <img id="previewImg" alt="Image preview">
+        </div>
+
+        <div class="swatches" id="swatches"></div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      Designed and Power by Touseef Malik
+    </footer>
+  </div>
+
+  <div class="copy-ok" id="copyOk">HEX copied to clipboard</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
